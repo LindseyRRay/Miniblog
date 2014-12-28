@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+<div class="row">
+<div class="large-12 columns">
+<div class="nav-bar right">
+<ul class="button-group">
+<li><a href="#" class="button">Link 1</a></li>
+<li><a href="#" class="button">Link 2</a></li>
+<li><a href="#" class="button">Link 3</a></li>
+<li><a href="#" class="button">Link 4</a></li>
+</ul>
+</div>
+<h1>Lindsey's Blog <small>Welcome to my Blog </small></h1>
+<hr/>
+</div>
+</div>
+ 
+ 
+<div class="row">
+ 
+<div class="large-9 columns" role="content">
+<article>
+<h3><a href="#">Welcome to my Blog- I hope you enjoy reading my thoughts</a></h3>
+<h6>Written by <a href="#">LRAY</a> on Dec 27, 2014 </h6>
+<div class="row">
+<div class="large-6 columns">
+<p></p>
+</div>
+<hr>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+{% for message in messages %}
+	<li> {{ message }} </li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+{% block content %}{% endblock %}
+</div>
+<div class="large-6 columns">
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThtVuIQ7CBYssbdwtzZjVLI_uw09SeLmyrxaRQEngnQAked5ZB"/>
+</div>
+
+</article>
+</div>
+</div>

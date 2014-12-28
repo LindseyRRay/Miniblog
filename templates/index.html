@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLS - Short Link</title>
+
+		<!-- External Style Sheets !-->
+		<link rel="stylesheet" href="/static/css/foundation.css">
+		<script src="static/js/vendor/modernizer.js"></script>
+
+	</head>
+
+	<body>
+
+	<div class="row">
+    	<div class="large-12 columns">
+        	<h1 class= "text-center">Lindsey's Link Shortener</h1>
+      	</div>
+    </div>
+		<div class="row">
+      		<div class="large-12 columns">
+      			<div class="panel">
+      			<p class = "text-center"><a href="{{long_url}}">Go to your URL</a></p>
+      			<p class = "text-center">Your Short URL is: {{short_url}}</p>
+			
+					<div class="row"></div>
+					<p class = "text-center">Permanent Link: ~/redirect/{{short_url}}</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
